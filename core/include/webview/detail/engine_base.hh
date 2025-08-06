@@ -145,6 +145,14 @@ window.__webview__.onUnbind(" +
 
   noresult resize() { return resize_impl(); }
 
+  noresult reload() { return reload_impl(); }
+
+  noresult goback() { return goback_impl(); }
+
+  noresult goforward() { return goforward_impl(); }
+
+  noresult stop() { return stop_impl(); }
+
   noresult set_html(const std::string &html) { return set_html_impl(html); }
 
   noresult init(const std::string &js) {
@@ -166,6 +174,10 @@ protected:
   virtual noresult set_size_impl(int width, int height,
                                  webview_hint_t hints) = 0;
   virtual noresult resize_impl() = 0;
+  virtual noresult reload_impl() = 0;
+  virtual noresult goback_impl() = 0;
+  virtual noresult goforward_impl() = 0;
+  virtual noresult stop_impl() = 0;
   virtual noresult set_html_impl(const std::string &html) = 0;
   virtual noresult eval_impl(const std::string &js) = 0;
 

@@ -446,6 +446,26 @@ protected:
     return {};
   }
 
+  noresult reload_impl() override {
+    m_webview->Reload();
+    return {};
+  }
+
+  noresult goback_impl() override {
+    m_webview->GoBack();
+    return {};
+  }
+
+  noresult goforward_impl() override {
+    m_webview->GoForward();
+    return {};
+  }
+
+  noresult stop_impl() override {
+    m_webview->Stop();
+    return {};
+  }
+
   noresult navigate_impl(const std::string &url) override {
     auto wurl = widen_string(url);
     m_webview->Navigate(wurl.c_str());

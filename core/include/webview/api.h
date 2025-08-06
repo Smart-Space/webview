@@ -153,6 +153,38 @@ WEBVIEW_API webview_error_t webview_set_size(webview_t w, int width, int height,
 WEBVIEW_API webview_error_t webview_resize(webview_t w);
 
 /**
+ * Reload the current page.
+ * This function is only available on Windows. (yet)
+ * 
+ * @param w The webview instance.
+ */
+WEBVIEW_API webview_error_t webview_reload(webview_t w);
+
+/**
+ * Go to the previous page in the navigation history.
+ * This function is only available on Windows. (yet)
+ * 
+ * @param w The webview instance.
+ */
+WEBVIEW_API webview_error_t webview_goback(webview_t w);
+
+/**
+ * Go to the next page in the navigation history.
+ * This function is only available on Windows. (yet)
+ * 
+ * @param w The webview instance.
+ */
+WEBVIEW_API webview_error_t webview_goforward(webview_t w);
+
+/**
+ * Stop loading the current page.
+ * This function is only available on Windows. (yet)
+ * 
+ * @param w The webview instance.
+ */
+WEBVIEW_API webview_error_t webview_stop(webview_t w);
+
+/**
  * Navigates webview to the given URL. URL may be a properly encoded data URI.
  *
  * Example:

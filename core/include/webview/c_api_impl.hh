@@ -187,6 +187,26 @@ WEBVIEW_API webview_error_t webview_resize(webview_t w) {
   return api_filter([=] {return cast_to_webview(w)->resize();});
 }
 
+WEBVIEW_API webview_error_t webview_reload(webview_t w) {
+  using namespace webview::detail;
+  return api_filter([=] { return cast_to_webview(w)->reload(); });
+}
+
+WEBVIEW_API webview_error_t webview_goback(webview_t w) {
+  using namespace webview::detail;
+  return api_filter([=] { return cast_to_webview(w)->goback(); });
+}
+
+WEBVIEW_API webview_error_t webview_goforward(webview_t w) {
+  using namespace webview::detail;
+  return api_filter([=] { return cast_to_webview(w)->goforward(); });
+}
+
+WEBVIEW_API webview_error_t webview_stop(webview_t w) {
+  using namespace webview::detail;
+  return api_filter([=] { return cast_to_webview(w)->stop(); });
+}
+
 WEBVIEW_API webview_error_t webview_navigate(webview_t w, const char *url) {
   using namespace webview::detail;
   if (!url) {
