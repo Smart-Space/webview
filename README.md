@@ -1,6 +1,6 @@
 # webview
 
-[webview/webview](https://github.com/webview/webview) forkde for tkwebview (tkinter webview control).
+[webview/webview](https://github.com/webview/webview) forkde for [Smart-Space/tkwebview: tkinter webview control](https://github.com/Smart-Space/tkwebview).
 
 ## Platform
 
@@ -9,6 +9,8 @@ It is a tiny cross-platform webview library. **But**, it has following limitatio
 1. `resize_impl` is only implemented on Windows. Perhaps you can find its implementation in `gtk_webkitgtk` or `cocoa_webkit`, I have never tested it. Even the win32 x86 library is not tested yet.
 
 ## License
+
+*From original project.*
 
 Code is distributed under MIT license, feel free to use it in your proprietary projects as well.
 
