@@ -90,7 +90,8 @@
 			"xiosbase": "cpp",
 			"errors.h": "c",
 			"*.rh": "cpp",
-			"locale": "cpp"
+			"locale": "cpp",
+			"forward_list": "cpp"
 		},
 		"files.exclude": {
 			"**/build": true
