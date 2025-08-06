@@ -195,7 +195,7 @@ protected:
   }
 
   noresult resize_impl() override {
-    throw exception{WEBVIEW_ERROR_NOT_IMPLEMENTED, "Not implemented"};
+    return {};
   }
 
   noresult navigate_impl(const std::string &url) override {
